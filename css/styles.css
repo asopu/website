@@ -1,24 +1,116 @@
+/*	lightgrey
+	midnightblue
+	goldenrod
+*/
+
 
 
 h1	{
-	color: teal;
-	background: orange;
+
+	color: lightgrey;
 	line-height: 200px;
 	font-size: 5em;
 	border-radius: 10px;
+	
+	
+}
+.h1background {
+	
+	
 }
 
 h2	{
-	color: purple;
-	background: yellow;
+	color: midnightblue;
+	background: goldenrod;
 	border-radius: 10px;
 }
 
 body {
-	color: green;
-	background: red;
+	color: midnightblue;
+	background: lightgrey;
 }
 
+li {
+	color: white;
+	display: inline-block;
+	list-style: none;
+}
+
+a {
+	display: inline-block;
+	line-height: 2em;
+	padding: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 10em;
+}
+
+a[href^="index"]::before {
+	content: "◎";
+	letter-spacing: 4px;
+	font-size: 2em;
+}
+
+a[href^="index"]:hover::before {
+	background: goldenrod;
+	border-radius: 10px;
+	content: "◉";
+	letter-spacing: 4px;
+	font-size: 2em;
+	padding: 3px;
+}
+
+a[href^="portfolio"]::before {
+	content: "◎";
+	letter-spacing: 4px;
+	font-size: 2em;
+}
+
+a[href^="portfolio"]:hover::before {
+	background: goldenrod;
+	border-radius: 10px;
+	content: "◉";
+	letter-spacing: 4px;
+	font-size: 2em;
+	padding: 3px;
+}
+
+a[href^="resume"]::before {
+	content: "◎";
+	letter-spacing: 4px;
+	font-size: 2em;
+}
+
+a[href^="resume"]:hover::before {
+	background: goldenrod;
+	border-radius: 10px;
+	content: "◉";
+	letter-spacing: 4px;
+	font-size: 2em;
+	padding: 3px;
+}
+
+a[href^="collage"]::before {
+	content: "◎";
+	letter-spacing: 4px;
+	font-size: 2em;
+}
+
+a[href^="collage"]:hover::before {
+	background: goldenrod;
+	border-radius: 10px;
+	content: "◉";
+	letter-spacing: 4px;
+	font-size: 2em;
+	padding: 3px;
+}
+
+.current {
+	background: floralwhite;
+	border-radius: 10px;
+	content: "◉";
+	
+}
 
 img
 {
@@ -28,59 +120,11 @@ img
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
 }
+
+
 img:hover
 {
     filter: none;
     -webkit-filter: none;
 }
 
-/* Image URL: https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/spritemap.png */
-
-li {
-  list-style: none;
-  display: inline-block;
-}
-
-a {
-  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/spritemap.png) no-repeat;
-  color: #fff;
-  height: 32px;
-  padding-left: 45px;
-  line-height: 32px;
-  
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase; 
-  transition: background-position .25s;
-}
-
-
-/* First Link OFF */
-li:nth-child(1) a {
-  background-position: 0 0;
-}
-
-/* First Link ON */
-li:nth-child(1) a:hover {
-  background-position: 0 -32px;
-}
-
-/* Second Link OFF */
-li:nth-child(2) a {
-  background-position: 0 -64px;
-}
-
-/* Second Link ON */
-li:nth-child(2) a:hover {
-  background-position: 0 -96px;
-}
-
-/* Third Link OFF */
-li:nth-child(3) a {
-  background-position: 0 -128px;
-}
-
-/* Third Link ON */
-li:nth-child(3) a:hover {
-  background-position: 0 -160px;
-}
