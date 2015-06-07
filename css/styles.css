@@ -6,18 +6,14 @@
 
 
 h1	{
-
-	color: lightgrey;
+	background-position: 2239px 1650px;
+	color: goldenrod;
 	line-height: 200px;
 	font-size: 5em;
 	border-radius: 10px;
-	
-	
 }
-.h1background {
 	
 	
-}
 
 h2	{
 	color: midnightblue;
@@ -44,6 +40,12 @@ a {
 	text-transform: uppercase;
 	width: 10em;
 }
+
+a {
+	color: midnightblue;
+}
+
+
 
 a[href^="index"]::before {
 	content: "◎";
